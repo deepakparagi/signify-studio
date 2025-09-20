@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signify Studio - Create Beautiful Digital Signatures</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fas fa-signature"></i>
+            <span>Signify Studio</span>
+        </div>
+        <div class="nav-links">
+            <a href="#" id="home-link" class="active">Home</a>
+            <a href="#" id="create-signature-link">Create Signature</a>
+        </div>
+    </nav>
+    <div class="main-container">
+        <!-- Landing Page Content (shown by default) -->
+        <div id="landing-content">
+            <!-- Hero Section -->
+            <section class="hero">
+                <h1>Create Beautiful Digital Signatures</h1>
+                <p>Signify Studio is the ultimate tool for creating, customizing, and managing your digital signatures with ease and professionalism.</p>
+                <a href="#" id="get-started-btn" class="hero-btn">Get Started Now</a>
+            </section>
+            <!-- Features Section -->
+            <h2 class="section-title">Why Choose Signify Studio?</h2>
+            <div class="features">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>Easy to Use</h3>
+                    <p>Intuitive interface that allows you to create signatures in seconds, even with no design experience.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-download"></i>
+                    </div>
+                    <h3>Download & Save</h3>
+                    <p>Download your signatures as high-quality PNG images or save them for later use.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Fully Responsive</h3>
+                    <p>Works perfectly on all devices - desktop, tablet, and mobile phones.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Signature Creation App (hidden by default) -->
+        <div id="signature-app">
+            <h2 class="section-title">Create Your Signature</h2>
+            <div class="app-container">
+                <div class="canvas-section">
+                    <h3 class="controls-title">Your Signature Canvas</h3>
+                    <canvas id="signature-canvas" width="500" height="200"></canvas>
+                    <p class="canvas-instruction">Draw your signature above using your mouse or touchscreen</p>
+                    <div class="signature-preview">
+                        <p>Your saved signature will appear here</p>
+                    </div>
+                </div>
+                <div class="controls-section">
+                    <h3 class="controls-title">Customization Tools</h3>
+                    <div class="control-group">
+                        <label class="control-label"><i class="fas fa-paint-brush"></i> Brush Color</label>
+                        <input type="color" id="text-color" class="color-picker" value="#000000">
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label"><i class="fas fa-fill-drip"></i> Background Color</label>
+                        <input type="color" id="background-color" class="color-picker" value="#ffffff">
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label"><i class="fas fa-brush"></i> Brush Size: <span id="size-value" class="size-value">5</span></label>
+                        <div class="brush-size-container">
+                            <i class="fas fa-minus"></i>
+                            <input type="range" id="brush-size" class="brush-size" min="1" max="20" value="5">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="button-container">
+                        <button id="clear-btn" class="action-btn clear-btn">
+                            <i class="fas fa-broom"></i> Clear
+                        </button>
+                        <button id="save-btn" class="action-btn save-btn">
+                            <i class="fas fa-save"></i> Save
+                        </button>
+                        <button id="download-btn" class="action-btn download-btn">
+                            <i class="fas fa-download"></i> Download
+                        </button>
+                        <button id="retrieve-btn" class="action-btn retrieve-btn">
+                            <i class="fas fa-history"></i> Retrieve
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <div class="copyright">
+            <p>© 2025 Signify Studio. All rights reserved.</p>
+        </div>
+    </footer>
+    <div class="notification" id="notification">
+        Signature saved successfully!
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
