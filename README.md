@@ -90,10 +90,6 @@ Want to tweak the app?
 
 ---
 
-## 📄 License
-
-MIT License — Use freely for personal or commercial projects.  
-Attribution appreciated but not required.
 
 ---
 
